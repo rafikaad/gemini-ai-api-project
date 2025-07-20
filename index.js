@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: 'models/gemini-2.5-Pro'});
+const model = genAI.getGenerativeModel({ model: 'models/gemini-2.0-flash'});
 
 const upload = multer ({ dest:'uploads/'});
 
